@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 import unicornhat as uh
 import datetime
-from time import sleep
 
-print("""Binary Clock made by Iorga Dragos Florian
-Displays Hour(red), Minute(yellow), Second(blue), Day(green) and Month(Pink) in binary format""")
-FPS = 30.0
 uh.rotation(0)
 uh.brightness(1)
 
@@ -43,6 +39,4 @@ while True:
 
     for idx,b in enumerate(month):
         draw_time(b,2,idx,'purple')
-    
-    sleep(1.0/FPS)
     uh.show()
